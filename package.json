@@ -1,7 +1,7 @@
 {
   "name": "repocompass",
   "version": "0.1.0",
-  "description": "GitHub Copilot Agent Extension that maps repository architecture and generates onboarding documentation and Mermaid diagrams.",
+  "description": "MCP server that lets AI agents explore GitHub repositories and write onboarding guides with architecture diagrams.",
   "type": "module",
   "private": true,
   "engines": {
