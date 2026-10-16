@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Secrets & local environment
+.env
+*.pem
+certs/
+
+# OS/editor
+.DS_Store
+.vscode/
+*.private-key.pem
