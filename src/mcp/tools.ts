@@ -17,7 +17,7 @@ function describeError(e: unknown, what: string): string {
   const status = (e as { status?: number } | null)?.status;
   if (status === 401) return "GitHub rejected the token (invalid or expired). Create a new one.";
   if (status === 403) return `GitHub denied access to ${what} (missing permission or rate limit reached).`;
-  if (status === 404) return `${what} not found, or the token has no access to it.`;
+  if (status === 404) return `${what} not found. Check the name and path (a wrong path also gives 404; private repos the token can't see do too).`;
   return `Could not read ${what} (GitHub error${status ? ` ${status}` : ""}).`;
 }
 
