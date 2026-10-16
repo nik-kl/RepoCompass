@@ -12,3 +12,7 @@ certs/
 .DS_Store
 .vscode/
 *.private-key.pem
+node_modules
+dist
+.env*
+*.pem
